@@ -31,3 +31,66 @@
         <div class="card-icon" title="Metas" onclick="irPara('metas')">✔️</div>
       </section>
 
+      <main class="dashboard">
+        <section id="planejamento" class="card">
+          <h2>Novo Planejamento</h2>
+          <form id="formStudy" class="plan-form">
+            <input type="date" id="dia" required>
+            <input type="text" id="materia" placeholder="Matéria (ex: Matemática)" required>
+            <input type="text" id="horario" placeholder="Horário (ex: 14:00 - 16:00)" required>
+            <button type="submit" class="btn-save">Adicionar ao Plano</button>
+          </form>
+        </section>
+
+        <section id="cronograma" class="card">
+          <h2>Seu Cronograma</h2>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Data</th>
+                  <th>Matéria</th>
+                  <th>Horário</th>
+                  <th>Ações</th>
+                </tr>
+              </thead>
+              <tbody id="studyBody">
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="pomodoro" class="card">
+          <h2>Timer Pomodoro</h2>
+          <div class="pomodoro-config">
+            <label for="tempoPomodoro">Tempo (min):</label>
+            <input type="number" id="tempoPomodoro" value="25" min="1" max="120">
+          </div>
+          <div id="timer">25:00</div>
+          <div class="button-group">
+            <button onclick="startTimer()" class="btn-start">Iniciar</button>
+            <button onclick="pausarTempo()" class="btn-pause">Pausar</button>
+            <button onclick="resetTimer()" class="btn-reset">Resetar</button>
+          </div>
+        </section>
+
+        <section id="metas" class="card">
+          <h2>Metas do Dia</h2>
+          <div class="input-group">
+            <input type="text" id="taskInput" placeholder="Estudar capítulo 1...">
+            <button onclick="addTask()">Adicionar</button>
+          </div>
+          <ul id="taskList"></ul>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footerContact">
+          <a href="Criadores_e_feedback/sobre-nos.html"><button>Entre em contato conosco</button></a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
