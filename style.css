@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #0b0f2b;
+  color: white;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header img {
+  height: 50px;
+  margin-bottom: 10px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
