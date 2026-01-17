@@ -131,3 +131,15 @@ button {
   display: flex;
   flex-direction: column;
 }
+#timer {
+  font-size: 3rem;
+  text-align: center;
+  margin: 20px 0;
+  color: #ffeb3b;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
