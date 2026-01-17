@@ -56,3 +56,23 @@ function resetTimer() {
     timeLeft = 25 * 60;
     updateDisplay();
 }
+
+
+const formStudy = document.getElementById('formStudy');
+const studyBody = document.getElementById('studyBody');
+
+formStudy.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const dataRaw = document.getElementById('dia').value;
+    const dataBr = dataRaw.split('-').reverse().join('/');
+    const materia = document.getElementById('materia').value;
+    const horario = document.getElementById('horario').value;
+
+    const novoItem = { data: dataBr, materia, horario };
+    const planos = JSON.parse(localStorage.getItem('studyPlan')) || [];
+    planos.push(novoItem);
+    localStorage.setItem('studyPlan', JSON.stringify(planos));
+
+    formStudy.reset();
+    carregarDados();
+});
