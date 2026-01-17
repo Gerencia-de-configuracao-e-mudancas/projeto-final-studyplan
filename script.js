@@ -76,3 +76,39 @@ formStudy.addEventListener('submit', (e) => {
     formStudy.reset();
     carregarDados();
 });
+
+
+function carregarDados() {
+    const planos = JSON.parse(localStorage.getItem('studyPlan')) || [];
+    studyBody.innerHTML = '';
+    planos.forEach((item, index) => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td>${item.data}</td>
+            <td>${item.materia}</td>
+            <td>${item.horario}</td>
+            <td><button class="btn-delete-row" onclick="excluirItem(${index})">Excluir</button></td>
+        `;
+        studyBody.appendChild(row);
+    });
+}
+
+function excluirItem(index) {
+    const planos = JSON.parse(localStorage.getItem('studyPlan')) || [];
+    planos.splice(index, 1);
+    localStorage.setItem('studyPlan', JSON.stringify(planos));
+    carregarDados();
+}
+
+function addTask() {
+    const input = document.getElementById('taskInput');
+    if (input.value.trim() === '') return;
+
+    const li = document.createElement('li');
+    li.innerHTML = `
+        <span onclick="this.parentElement.classList.toggle('completed')">${input.value}</span>
+        <button onclick="this.parentElement.remove()" style="color:red; background:none; cursor:pointer">✕</button>
+    `;
+    document.getElementById('taskList').appendChild(li);
+    input.value = '';
+}
