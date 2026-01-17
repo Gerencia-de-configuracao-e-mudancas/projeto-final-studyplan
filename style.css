@@ -21,11 +21,13 @@ body {
   height: 50px;
   margin-bottom: 10px;
 }
+
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .card {
   background: #1c2340;
   padding: 20px;
@@ -74,10 +76,12 @@ body {
   border-radius: 12px;
   transition: 0.3s;
 }
+
 .card-icon:hover {
   transform: scale(1.1);
   background: rgba(255, 255, 255, 0.2);
 }
+
 .table-container {
   overflow-x: auto;
 }
@@ -127,10 +131,12 @@ button {
   padding: 5px 10px;
   font-size: 0.8rem;
 }
+
 #planejamento {
   display: flex;
   flex-direction: column;
 }
+
 #timer {
   font-size: 3rem;
   text-align: center;
@@ -141,5 +147,34 @@ button {
 .button-group {
   display: flex;
   gap: 10px;
+  justify-content: center;
+}
+
+#taskList {
+  list-style: none;
+  margin-top: 15px;
+}
+
+#taskList li {
+  background: #2d365d;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+footer {
+  text-align: center;
+}
+
+.footerContact {
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
