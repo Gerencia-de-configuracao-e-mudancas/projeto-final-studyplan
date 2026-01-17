@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #0b0f2b;
+  color: white;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header img {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: #1c2340;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  margin-bottom: 15px;
+  color: #c7f2ff;
+  font-size: 1.2rem;
+}
+
+.cta-area {
+  cursor: pointer;
+  padding: 15px;
+  background: #0d5aa7;
+  border-radius: 15px;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.texto-sobre {
+  display: none;
+  background: #1c2340;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.cards {
+  background: #4ca832;
+  padding: 15px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.card-icon {
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card-icon:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid #2d365d;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #0b0f2b;
+  color: white;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn-save {
+  background: #4ca832;
+  color: white;
+  width: 100%;
+}
+
+.btn-delete-row {
+  background: #ff4c4c;
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+}
+
+#planejamento {
+  display: flex;
+  flex-direction: column;
+}
+
+#timer {
+  font-size: 3rem;
+  text-align: center;
+  margin: 20px 0;
+  color: #ffeb3b;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+#taskList {
+  list-style: none;
+  margin-top: 15px;
+}
+
+#taskList li {
+  background: #2d365d;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+footer {
+  text-align: center;
+}
+
+.footerContact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
