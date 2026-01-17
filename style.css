@@ -78,3 +78,56 @@ body {
   transform: scale(1.1);
   background: rgba(255, 255, 255, 0.2);
 }
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid #2d365d;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #0b0f2b;
+  color: white;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn-save {
+  background: #4ca832;
+  color: white;
+  width: 100%;
+}
+
+.btn-delete-row {
+  background: #ff4c4c;
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+}
+#planejamento {
+  display: flex;
+  flex-direction: column;
+}
