@@ -33,3 +33,28 @@ body {
 .header img {
   height: 45px;
 }
+.card {
+  background: #1c2340;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  margin-bottom: 15px;
+  color: #c7f2ff;
+  font-size: 1.2rem;
+}
+
+.grid-criadores {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 15px;
+  justify-items: center;
+}
+
+.grid-criadores > .criador-box:nth-child(3) {
+  grid-column: 1 / -1; 
+  width: 100%;
+  max-width: 280px;
+}
