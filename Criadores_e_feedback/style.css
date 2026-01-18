@@ -30,3 +30,6 @@ body {
   margin-bottom: 20px;
   font-weight: bold;
 }
+.header img {
+  height: 45px;
+}
