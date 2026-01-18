@@ -58,3 +58,37 @@ body {
   width: 100%;
   max-width: 280px;
 }
+
+.criador-box {
+  width: 100%;
+  max-width: 280px; 
+  min-width: 0; 
+  text-align: center;
+  background: #2d365d;
+  padding: 15px;
+  border-radius: 10px;
+  overflow: hidden; 
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  background: #c7f2ff;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.sub-text a {
+  color: #c7f2ff;
+  text-decoration: none;
+  word-break: break-all; 
+  font-size: 0.85rem;    
+  display: block;        
+}
+
+.sub-text a:hover {
+  text-decoration: underline;
+}
