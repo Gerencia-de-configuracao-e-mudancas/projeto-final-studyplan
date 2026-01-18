@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyPlan | Comunidade</title>
+    <link rel="icon" href="icone.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <img src="icone.png" alt="StudyPlan Logo">
+          <h1>StudyPlan</h1>
+        </div>
+      </header>
+
+      <a href="../index.html" class="voltar">← Voltar ao Início</a>
+
+      <main class="dashboard">
+        <section class="card">
+          <h2>Criadores</h2>
+          <div class="grid-criadores">
+            <div class="criador-box">
+              <div class="avatar">👨‍💻</div>
+              <p><strong>Cícero Arthur Otaviano Feitosa</strong></p>
+              <p class="sub-text">
+                <a href="https://github.com/cARTHURoFEITOSA" target="_blank">https://github.com/cARTHURoFEITOSA</a>
+              </p>
+            </div>
+
+            <div class="criador-box">
+              <div class="avatar">👨‍💻</div>
+              <p><strong>João Kyldery Catanão da Silva</strong></p>
+              <p class="sub-text">
+                <a href="https://github.com/joaokyldery" target="_blank">https://github.com/joaokyldery</a>
+              </p>
+            </div>
+
+            <div class="criador-box">
+              <div class="avatar">👨‍💻</div>
+              <p><strong>Weslley Casimiro da Silva</strong></p>
+              <p class="sub-text">
+                <a href="https://github.com/W3sll3ycs" target="_blank">https://github.com/W3sll3ycs</a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Conte sua experiência</h2>
+          <form id="contact-form">
+            <input type="text" name="from_name" placeholder="Seu Nome" required>
+            <textarea name="message" placeholder="Como o StudyPlan te ajudou?" required></textarea>
+            <button type="submit" class="btn-save">Enviar Comentário</button>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
