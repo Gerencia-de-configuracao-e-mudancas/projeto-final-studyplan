@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #0b0f2b;
+  color: white;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.voltar {
+  color: #c7f2ff;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
