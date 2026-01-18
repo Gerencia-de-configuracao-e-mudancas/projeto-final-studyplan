@@ -1,1 +1,49 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/qlRPAWSm)
+# 📚 StudyPlan | Gestão de Estudos
+
+O **StudyPlan** é um site simples e responsivo desenvolvido para auxiliar na **organização e planejamento de estudos**, oferecendo uma interface moderna, clara e acessível para estudantes.
+
+Este projeto foi criado com foco **educacional**, utilizando boas práticas de desenvolvimento front-end e versionamento com GitHub.
+
+---
+
+## 🖥️ Demonstração
+
+📌 Projeto estático desenvolvido com **HTML, CSS e JavaScript**, podendo ser executado diretamente no navegador.
+
+---
+
+## 🚀 Funcionalidades
+
+- 📅 Organização visual do planejamento de estudos  
+- 🎯 Interface simples e intuitiva  
+- 📱 Layout responsivo (desktop e mobile)  
+- 👥 Página “Sobre Nós / Criadores”  
+- 💬 Área de feedback  
+- 🎨 Design moderno com paleta escura  
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **HTML5**  
+- **CSS3**  
+- **JavaScript**  
+- **Google Fonts (Inter)**  
+
+---
+
+## 📁 Estrutura do Projeto
+
+```text
+projeto de git/
+│
+├── index.html
+├── style.css
+├── script.js
+├── icone.png
+│
+├── Criadores_e_feedback/
+│   ├── sobre-nos.html
+│   ├── style.css
+│   ├── script.js
+│   └── icone.png
