@@ -152,3 +152,17 @@ footer {
     max-width: 280px; 
   }
 }
+.criador-box{
+    transition: transform 0.3s ease;
+}
+.criador-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(red, green, blue, alpha);
+    z-index: 10;
+}
+.foto-perfil{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
