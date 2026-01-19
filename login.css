@@ -1,0 +1,110 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #050a14; /* Azul quase preto */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: transparent; 
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+header p {
+    margin-top: 5px;
+    font-size: 1.1rem;
+    color: #b0b3b8; /* Cinza claro para subtítulo */
+}
+
+/* Conteúdo Principal */
+main {
+    max-width: 500px; /* Largura mais contida para o login */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cartão de Login (Estilo dos cards da imagem) */
+.login-section {
+    background-color: #111625; /* Azul marinho escuro (Card) */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.login-section h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Formulário */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #d1d5db;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #0a0e17; /* Fundo do input mais escuro */
+    border: 1px solid #2a3b55; /* Borda sutil */
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+form input::placeholder {
+    color: #5c6b7f;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #2c7be5; /* Azul destaque ao clicar */
+}
+
+
+button {
+    width: 100%;
+    background-color: #4caf50; /* Verde vibrante */
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #43a047; /* Verde um pouco mais escuro */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+    color: #5c6b7f;
+    font-size: 0.9rem;
+}
