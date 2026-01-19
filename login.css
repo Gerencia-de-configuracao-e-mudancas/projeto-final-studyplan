@@ -1,0 +1,88 @@
+/* Reset básico para esta página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8; /* Mesma cor de fundo do site principal */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa a altura total da tela */
+}
+
+/* Container principal (o "cartão" de login) */
+.login-container {
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Cabeçalho do card */
+header h1 {
+    color: #2c7be5; /* Azul do projeto original */
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Estilos do Formulário */
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input:focus {
+    border-color: #2c7be5;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    background-color: #2c7be5;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1a5fc4;
+}
+
+/* Rodapézinho dentro do card */
+.footer-note {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #aaa;
+}
