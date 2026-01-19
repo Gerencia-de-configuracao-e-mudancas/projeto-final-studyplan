@@ -1,88 +1,110 @@
-/* Reset básico para esta página */
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Corpo - Fundo escuro conforme a imagem */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f6f8; /* Mesma cor de fundo do site principal */
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Ocupa a altura total da tela */
+    background-color: #050a14; /* Azul quase preto */
+    color: #ffffff;
+    line-height: 1.6;
 }
 
-/* Container principal (o "cartão" de login) */
-.login-container {
-    background-color: white;
-    width: 100%;
-    max-width: 400px;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+/* Cabeçalho */
+header {
+    background-color: transparent; /* Removemos o fundo azul sólido */
+    color: #ffffff;
+    padding: 30px 20px;
     text-align: center;
 }
 
-/* Cabeçalho do card */
 header h1 {
-    color: #2c7be5; /* Azul do projeto original */
-    font-size: 2rem;
-    margin-bottom: 5px;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 header p {
-    color: #666;
-    margin-bottom: 30px;
+    margin-top: 5px;
+    font-size: 1.1rem;
+    color: #b0b3b8; /* Cinza claro para subtítulo */
 }
 
-/* Estilos do Formulário */
-form {
-    text-align: left;
+/* Conteúdo Principal */
+main {
+    max-width: 500px; /* Largura mais contida para o login */
+    margin: 0 auto;
+    padding: 20px;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #555;
+/* Cartão de Login (Estilo dos cards da imagem) */
+.login-section {
+    background-color: #111625; /* Azul marinho escuro (Card) */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-input {
-    width: 100%;
-    padding: 10px;
+.login-section h2 {
     margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Formulário */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #d1d5db;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #0a0e17; /* Fundo do input mais escuro */
+    border: 1px solid #2a3b55; /* Borda sutil */
+    border-radius: 6px;
+    color: #ffffff;
     font-size: 1rem;
 }
 
-input:focus {
-    border-color: #2c7be5;
-    outline: none;
+form input::placeholder {
+    color: #5c6b7f;
 }
 
+form input:focus {
+    outline: none;
+    border-color: #2c7be5; /* Azul destaque ao clicar */
+}
+
+/* Botão (Verde conforme o botão 'Adicionar ao Plano' da imagem) */
 button {
     width: 100%;
-    background-color: #2c7be5;
+    background-color: #4caf50; /* Verde vibrante */
     color: white;
     border: none;
     padding: 12px;
     font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 6px;
     transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #1a5fc4;
+    background-color: #43a047; /* Verde um pouco mais escuro */
 }
 
-/* Rodapézinho dentro do card */
-.footer-note {
-    margin-top: 20px;
-    font-size: 0.8rem;
-    color: #aaa;
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+    color: #5c6b7f;
+    font-size: 0.9rem;
 }
