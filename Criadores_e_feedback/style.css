@@ -161,29 +161,30 @@ footer {
 
 @media (max-width: 600px) {
   .grid-criadores {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
 
-  .grid-criadores > .criador-box:nth-child(3) {
-    grid-column: auto;
+  .grid-criadores > .criador-box {
+    grid-column: auto !important;
     max-width: 280px;
-  }
-  
-  .criador-box {
-    max-width: 280px; 
-  }
-}
-.criador-box{
-    transition: transform 0.3s ease;
-}
-.criador-box:hover{
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(red, green, blue, alpha);
-    z-index: 10;
-}
-.foto-perfil{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
+  }
+}
+
+.criador-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.criador-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.foto-perfil {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
