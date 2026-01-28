@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   </head>
+
   <body>
     <div class="container">
       <header class="header">
@@ -33,38 +34,57 @@
 
       <main class="dashboard">
         <section id="planejamento" class="card">
-          <h2>Novo Planejamento</h2>
-          <form id="formStudy" class="plan-form">
-            <input type="date" id="dia" required>
-            <input type="text" id="materia" placeholder="Matéria (ex: Matemática)" required>
-            <input type="text" id="horario" placeholder="Horário (ex: 14:00 - 16:00)" required>
-            <button type="submit" class="btn-save">Adicionar ao Plano</button>
+          <h2>Planejar Cronograma Semanal</h2>
+          <form id="formStudy">
+            <label for="diaSemana">Dia da Semana:</label>
+            <select id="diaSemana" required>
+              <option value="Segunda-feira">Segunda-feira</option>
+              <option value="Terça-feira">Terça-feira</option>
+              <option value="Quarta-feira">Quarta-feira</option>
+              <option value="Quinta-feira">Quinta-feira</option>
+              <option value="Sexta-feira">Sexta-feira</option>
+              <option value="Sábado">Sábado</option>
+              <option value="Domingo">Domingo</option>
+            </select>
+
+            <label for="materia">Disciplina:</label>
+            <input type="text" id="materia" placeholder="Ex: Matemática" required>
+
+            <label for="horario">Horário:</label>
+            <input type="time" id="horario" required>
+
+            <button type="submit" class="btn-save">Adicionar ao Cronograma</button>
           </form>
         </section>
 
         <section id="cronograma" class="card">
-          <h2>Seu Cronograma</h2>
+          <h2>Meu Cronograma Semanal</h2>
           <div class="table-container">
             <table>
               <thead>
                 <tr>
-                  <th>Data</th>
-                  <th>Matéria</th>
+                  <th>Dia</th>
+                  <th>Disciplina</th>
                   <th>Horário</th>
                   <th>Ações</th>
                 </tr>
               </thead>
-              <tbody id="studyBody">
-              </tbody>
+              <tbody id="studyBody"></tbody>
             </table>
           </div>
         </section>
 
         <section id="pomodoro" class="card">
-          <h2>Timer Pomodoro</h2>
+          <h2 id="pomodoroStatus">Timer Pomodoro (Foco)</h2>
           <div class="pomodoro-config">
-            <label for="tempoPomodoro">Tempo (min):</label>
-            <input type="number" id="tempoPomodoro" value="25" min="1" max="120">
+            <div>
+              <label for="tempoPomodoro">Estudo (min):</label>
+              <input type="number" id="tempoPomodoro" value="25" min="1">
+            </div>
+            <div>
+              <label for="tempoPausa">Pausa (min):</label>
+              <input type="number" id="tempoPausa" value="5" min="1">
+            </div>
           </div>
           <div id="timer">25:00</div>
           <div class="button-group">
@@ -83,6 +103,16 @@
           <ul id="taskList"></ul>
         </section>
       </main>
+
+      <audio id="audioAlarme" src="Audios/alarme.mp3" preload="auto" loop></audio>
+
+      <div id="pomodoroModal" class="modal-pomodoro">
+        <div class="modal-content">
+          <h3 id="modalTitulo">Tempo Esgotado!</h3>
+          <p id="modalMensagem">Hora de mudar de ciclo.</p>
+          <button onclick="fecharModal()" class="btn-start">OK</button>
+        </div>
+      </div>
 
       <footer>
         <div class="footerContact">

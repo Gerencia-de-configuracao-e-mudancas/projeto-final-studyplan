@@ -101,6 +101,15 @@ button {
 
 button:hover {
     background-color: #43a047; 
+    filter: brightness(1.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: translateY(1px);
+  filter: brightness(0.9);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 footer {
