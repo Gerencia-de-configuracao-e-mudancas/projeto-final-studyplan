@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyPlan | Gestão de Estudos</title>
+    <link rel="icon" href="icone.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <img src="icone.png" alt="StudyPlan Logo">
+          <h1>StudyPlan</h1>
+        </div>
+      </header>
+
+      <section class="cta" id="cta">
+        <div class="cta-area">SOBRE O SITE</div>
+        <p id="textoSobre" class="texto-sobre">
+          O StudyPlan foi criado para ajudar estudantes a organizarem melhor sua rotina, melhorando o foco e a produtividade com ferramentas integradas.
+        </p>
+      </section>
+
+      <section class="cards">
+        <div class="card-icon" title="Planejar" onclick="irPara('planejamento')">📅</div>
+        <div class="card-icon" title="Ver Cronograma" onclick="irPara('cronograma')">📋</div>
+        <div class="card-icon" title="Foco" onclick="irPara('pomodoro')">⏱️</div>
+        <div class="card-icon" title="Metas" onclick="irPara('metas')">✔️</div>
+      </section>
+
+      <main class="dashboard">
+        <section id="planejamento" class="card">
+          <h2>Planejar Cronograma Semanal</h2>
+          <form id="formStudy">
+            <label for="diaSemana">Dia da Semana:</label>
+            <select id="diaSemana" required>
+              <option value="Segunda-feira">Segunda-feira</option>
+              <option value="Terça-feira">Terça-feira</option>
+              <option value="Quarta-feira">Quarta-feira</option>
+              <option value="Quinta-feira">Quinta-feira</option>
+              <option value="Sexta-feira">Sexta-feira</option>
+              <option value="Sábado">Sábado</option>
+              <option value="Domingo">Domingo</option>
+            </select>
+
+            <label for="materia">Disciplina:</label>
+            <input type="text" id="materia" placeholder="Ex: Matemática" required>
+
+            <label for="horario">Horário:</label>
+            <input type="time" id="horario" required>
+
+            <button type="submit" class="btn-save">Adicionar ao Cronograma</button>
+          </form>
+        </section>
+
+        <section id="cronograma" class="card">
+          <h2>Meu Cronograma Semanal</h2>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Dia</th>
+                  <th>Disciplina</th>
+                  <th>Horário</th>
+                  <th>Ações</th>
+                </tr>
+              </thead>
+              <tbody id="studyBody"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="pomodoro" class="card">
+          <h2 id="pomodoroStatus">Timer Pomodoro (Foco)</h2>
+          <div class="pomodoro-config">
+            <div>
+              <label for="tempoPomodoro">Estudo (min):</label>
+              <input type="number" id="tempoPomodoro" value="25" min="1">
+            </div>
+            <div>
+              <label for="tempoPausa">Pausa (min):</label>
+              <input type="number" id="tempoPausa" value="5" min="1">
+            </div>
+          </div>
+          <div id="timer">25:00</div>
+          <div class="button-group">
+            <button onclick="startTimer()" class="btn-start">Iniciar</button>
+            <button onclick="pausarTempo()" class="btn-pause">Pausar</button>
+            <button onclick="resetTimer()" class="btn-reset">Resetar</button>
+          </div>
+        </section>
+
+        <section id="metas" class="card">
+          <h2>Metas do Dia</h2>
+          <div class="input-group">
+            <input type="text" id="taskInput" placeholder="Estudar capítulo 1...">
+            <button onclick="addTask()">Adicionar</button>
+          </div>
+          <ul id="taskList"></ul>
+        </section>
+      </main>
+
+      <audio id="audioAlarme" src="Audios/alarme.mp3" preload="auto" loop></audio>
+
+      <div id="pomodoroModal" class="modal-pomodoro">
+        <div class="modal-content">
+          <h3 id="modalTitulo">Tempo Esgotado!</h3>
+          <p id="modalMensagem">Hora de mudar de ciclo.</p>
+          <button onclick="fecharModal()" class="btn-start">OK</button>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footerContact">
+          <a href="../Criadores_e_feedback/sobre-nos.html"><button>Entre em contato conosco</button></a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

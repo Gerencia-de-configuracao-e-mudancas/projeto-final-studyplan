@@ -1,19 +1,21 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #050a14; /* Azul quase preto */
+    background-color: #050a14;
     color: #ffffff;
     line-height: 1.6;
 }
 
-/* Cabeçalho */
 header {
     background-color: transparent; 
     color: #ffffff;
@@ -29,19 +31,17 @@ header h1 {
 header p {
     margin-top: 5px;
     font-size: 1.1rem;
-    color: #b0b3b8; /* Cinza claro para subtítulo */
+    color: #b0b3b8; 
 }
 
-/* Conteúdo Principal */
 main {
-    max-width: 500px; /* Largura mais contida para o login */
+    max-width: 500px; 
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Cartão de Login (Estilo dos cards da imagem) */
 .login-section {
-    background-color: #111625; /* Azul marinho escuro (Card) */
+    background-color: #111625; 
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
@@ -54,7 +54,11 @@ main {
     font-size: 1.5rem;
 }
 
-/* Formulário */
+.login-container {
+  width: 100%;
+  max-width: 420px;
+}
+
 form label {
     display: block;
     margin-bottom: 8px;
@@ -66,8 +70,8 @@ form input {
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
-    background-color: #0a0e17; /* Fundo do input mais escuro */
-    border: 1px solid #2a3b55; /* Borda sutil */
+    background-color: #0a0e17; 
+    border: 1px solid #2a3b55; 
     border-radius: 6px;
     color: #ffffff;
     font-size: 1rem;
@@ -79,13 +83,12 @@ form input::placeholder {
 
 form input:focus {
     outline: none;
-    border-color: #2c7be5; /* Azul destaque ao clicar */
+    border-color: #2c7be5; 
 }
-
 
 button {
     width: 100%;
-    background-color: #4caf50; /* Verde vibrante */
+    background-color: #4caf50; 
     color: white;
     border: none;
     padding: 12px;
@@ -97,14 +100,47 @@ button {
 }
 
 button:hover {
-    background-color: #43a047; /* Verde um pouco mais escuro */
+    background-color: #43a047; 
+    filter: brightness(1.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Rodapé */
+button:active {
+  transform: translateY(1px);
+  filter: brightness(0.9);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 footer {
     text-align: center;
     padding: 20px;
     background-color: transparent;
     color: #5c6b7f;
     font-size: 0.9rem;
+}
+
+input,
+button {
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    margin: 0 auto;
+  }
 }
