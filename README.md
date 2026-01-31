@@ -28,22 +28,34 @@ Este projeto foi criado com foco **educacional**, utilizando boas práticas de d
 - **HTML5**  
 - **CSS3**  
 - **JavaScript**  
-- **Google Fonts (Inter)**  
+- **Git/Github**  
 
 ---
 
 ## 📁 Estrutura do Projeto
 
 ```text
-projeto de git/
+projeto-final-studyplan-main/
 │
 ├── index.html
-├── style.css
-├── script.js
-├── icone.png
+├── login.css
+├── login.js
+├── README.md
+│
+├── Principal/
+│ ├── pagina_principal.html
+│ ├── style.css
+│ ├── script.js
+│ ├── icone.png
+│ └── Audios/
+│ └── alarme.mp3
 │
 ├── Criadores_e_feedback/
-│   ├── sobre-nos.html
-│   ├── style.css
-│   ├── script.js
-│   └── icone.png
+│ ├── sobre-nos.html
+│ ├── style.css
+│ ├── script.js
+│ ├── icone.png
+│ ├── Arthur-feitosa.jpg
+│ ├── Gledson-soares.jpg
+│ ├── Joao-kyldery.jpg
+│ └── Weslley-casimiro.jpg
